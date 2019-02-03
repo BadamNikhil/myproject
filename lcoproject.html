@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Lora|Pacifico');
+    @import url('https://fonts.googleapis.com/css?family=Merienda');
+    /* @font-face kit by Fonts2u (https://fonts2u.com) */ @font-face {font-family:"Zealot";src:url("zealot.eot?") format("eot"),url("zealot.woff") format("woff"),url("zealot.ttf") format("truetype"),url("zealot.svg#Zealot") format("svg");font-weight:normal;font-style:normal;}
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .container-fluid{
+        height: 100%;
+        width: 100%;
+    }
+    .one{
+        height: 25vh;
+        background-image:url('https://png.pngtree.com/thumb_back/fw800/back_pic/02/65/46/935787aff8b1db1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .one>img{
+        position: absolute;
+        top: -10vh;
+        left: 50vw;
+        width: 20%;
+        height:10vh;
+    }
+    .an
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(0 0,calc(100% - 50%) 0,calc(100% - 60%) 100% ,0 100%);
+        opacity: 0.5;
+        background-image:linear-gradient(to right,#c2e59c,#64b3f4);
+    }
+    .two
+    {
+        transform-style: preserve-3d;
+        height: 75vh;      
+    }
+      #bodyst
+    {
+        position: relative;
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 3%; 
+        padding: 3%;
+        transform-style:preserve-3d; 
+    }
+    #bodyst>.overlay
+    {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        /* background-color:rgba(50,50,50,.5); */
+    }
+    #bodyst>.ovim
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background-image: url('https://previews.123rf.com/images/timla/timla1506/timla150600048/41317735-orange-sexy-and-juicy-kiss-background.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .in{
+        position: relative;
+        z-index: 4;
+        border-radius: 3%;
+    }
+    .in:hover>.hov>p{
+        font-size: 4vh;
+        transition-property: font-size;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+        font-family: 'Merienda';
+    }
+    .in:hover
+    {
+        box-shadow: 0 0 3em rgba(0,0,0,1);
+        transform:scale(1.05);
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+        /* -webkit-filter: blur(2px); */
+    }
+    .in:hover .order{
+        visibility: visible;
+        height: 33%;
+        transition-property: height;
+        transition-delay:0s;
+        transition-duration:0.5s;
+        transition-timing-function: linear;
+        -webkit-filter:blur(0);
+    }
+    .in>.order
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        height: 0%;
+        width: 100%;
+        background-color: white;
+        border-bottom-left-radius: 4%;
+        border-bottom-right-radius: 4%;
+    }
+    .ek
+    {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91An7Zufj39AhIGJGcHzlILd7_tygAx0R0OQryoA4ZrM6JdD_');
+        background-size: cover;
+        background-position:center;
+        background-color: black;
+    }
+    .do
+    {
+        background-image: url('http://kababjiarabia.com/wp-content/uploads/2017/01/freshpineapplejuice.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+    }
+    .th
+    {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQDzp3FDGhxgkKeKIrfCSqMuKT3fMiY3gLs10TG7Yis7Y6QPJ0');
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+    }
+    .ch
+    {
+        background-image: url('https://images.lifealth.com/uploads/2018/04/side-effects-of-sugarcane-juice-1.jpg');
+        background-size: cover;
+        background-position: center;
+    background-color: black;
+    }
+    .pa
+    {
+        background-image: url('http://cdn2.foodviva.com/static-content/food-images/juice-recipes/grape-juice/grape-juice.jpg');
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+    }
+    .che
+    {
+        background-size: cover;
+        background-position: center;
+        background-image: url('http://cdn1.foodviva.com/static-content/food-images/juice-recipes/papaya-juice-recipe/papaya-juice-recipe.jpg');
+        background-color: black;
+    }
+    .order{
+        position: relative;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+    .in:hover>.order>i{
+        visibility: visible;
+        transition-property: visibility;
+        transition-delay: 0.5s;
+        transition-duration: 0s;
+    }
+    .order>i{
+       flex:1;
+       font-size:4.5vh;
+    height: 100%;
+    padding: 7%;
+    visibility: hidden;
+    }
+    .hov{
+           position: absolute;
+           height: 100%;
+           width: 100%;
+           visibility: hidden;
+           background-color: rgba(0,0,0,.5);
+           text-align: center;
+           color: white;
+           font-family:'Zealot';
+           border-top-left-radius: 3%;
+           border-top-right-radius: 3%;
+    }
+    .hov>p
+    {
+        font-size: 0vh;
+        margin-top: 20%;
+        font-family: 'lora';
+    }
+    .in:hover .hov{
+        visibility: visible;
+         transition-property: visibility;
+    }
+/* Medium devices (landscape tablets, 767px and down) */
+@media only screen and (max-width: 767px) {
+    #bodyst
+    {
+        height: 120vh;
+        width: 100%;
+       grid-template-columns: repeat(2,1fr);
+       grid-template-rows: repeat(3,35vh);
+       grid-gap: 3%;
+        }
+} 
+#nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: fixed;
+   top: 0;
+   height: 100vh;
+   width: 30%;
+   background-color: rgba(10,10,10,0.5);
+   z-index: 99;
+    left: -30%;
+    transition: 0.5s;
+}
+#nav>ul
+{
+    width: 100%;
+    margin-top: 10vh;
+    position: absolute;
+    top:10vh;
+    left: -2vh;
+    padding-right: vh;
+    display: block;
+    list-style-type: square no;
+    font-family:monospace;
+}
+#navi>ul
+{
+    padding-right: 1.5vh;
+    width: 100%;
+    margin-top: 10vh;
+    position: absolute;
+    top:10vh;
+    left: -3vh;
+    display: block;
+    list-style-type: square no;
+    font-family:monospa;
+}
+li{
+    text-align: center;
+    margin-top: 0.5vh;
+    list-style: none;
+    height: 10vh;
+    padding: 1.5vh;
+    max-width:95%; 
+}
+a:hover{
+  text-decoration: white;
+  color:skyblue;   
+}
+li>a{
+    text-decoration: none;
+    color: white;
+    font-size:2.5vw;
+    margin-top: 3vh;
+}
+#navi
+{
+    display: block;
+   position: fixed;
+   top: 0;
+   height: 100vh;
+   width: 30%;
+   background-color: rgba(10,10,10,0.5);
+   z-index: 99;
+    left: 0%;
+    transition: 0.5s;
+}
+.hamburger{
+      position: absolute;
+    top: 0;
+    height: 4vh;
+    width: 4vw;
+    left:105%;
+    font-weight: 600;
+    font-size: 6vh;
+    border-radius: 50%;
+    text-align: center;
+    color:black;
+    margin-top:2vh;
+    margin-right:4vh;
+}
+#wrong
+{
+    position: absolute;
+    top: 1.5vh;
+    left: 1vw;
+    visibility: hidden;
+}
+ .order>i:hover
+{
+    background-color:skyblue;
+    color: white;
+}
+#header>.form-horizontal
+{
+    margin-left: 50%;
+    margin-top: 7%;
+}
+input
+{
+    border-radius: 25%;
+}
+#bodys
+{
+    text-align: center;
+  height:75vh;
+  position: relative;
+  padding: 4vh;
+}
+#bodys>img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+#bodys>p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+#bodys>h1{
+    position: absolute;
+    top: 45%;
+    left:2.5vw;
+    height: 50%;
+    width: 90%;
+    font-family: cursive;
+    z-index: 4;
+    color:yellow;
+    font-family: 'Pacifico';
+    font-size: 9vh;
+}
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+   #bodys
+   {
+    padding: 0;
+   }
+   a
+   {
+       font-size: 4vw;
+   }
+}
+#nav>.fot{
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    padding: 2.6vw;
+}
+#navi>.fot{
+    position: absolute;
+    top: 80vh;
+    left: 0;
+    height: 13%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2.6vw;
+}
+.fot>i
+{
+    padding-top: 2vh;
+    height: 100%;
+    color: white;
+   flex: 1;
+   font-size:4vw; 
+}
+.fot>i:hover{
+    color: aqua;
+}
+    </style>
+</head>
+<body>
+        <script >
+              var i=0;
+                function toggleham()
+                {    
+                    var nav=document.getElementById('nav');
+                    var ori='nav';
+                    var navid='navi';
+                    var i=document.getElementById('ham');
+                    var x=document.getElementById('wrong');
+                    x.style.visibility='visible';
+                    i.id='wrong';
+                    x.id='ham';
+                    nav.id=navid;
+                }
+                function toggledown()
+                {
+                    var nav=document.getElementById('navi');
+                    var ori='nav';
+                    var navid='navi';
+                    var i=document.getElementById('wrong');
+                    var k=document.getElementById('ham');
+                    k.style.visibility='hidden';
+                    i.id='ham';
+                    k.id='wrong';
+                    nav.id=ori;
+                }
+                </script>
+    <div id="nav">
+            <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">EXPERIENCE</a></li>
+                    <li><a href="#">MORE</a></li>
+                </ul>
+                <div class="fot">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                </div>
+            <div class="hamburger">
+                    <i class="fas fa-bars" id="ham"  onclick="toggleham()"></i>
+                    <i class="fas fa-times" id="wrong" onclick="toggledown()"></i>
+            </div>
+    </div>
+<div class="container-fluid">
+  <div class="row one">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="header">
+        <!-- <img src="https://learncodeonline.in/wp-content/uploads/2018/09/logo354.png"> -->
+        <form method="GET" action="#" class="form-horizontal">
+                <div class="form-group-row">
+            <div class="input-group input-group-lg col-lg-8 col-xs-8 col-sm-8 col-md-8">
+        <input type="search" class="form-control" placeholder="search for available juices">
+        <div class="input-groupt-btn"> 
+        <button class="btn btn-default btn-lg" type="submit">
+            <i class="fas fa-search"></i>
+            </button> 
+        </div>           
+            </div>
+                </div>
+        </form>
+        </div>
+        <div class="an"></div>
+    </div>
+  <div class="row two">
+    <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 " id="bodys">
+        <h1>Start drinking healthy!</h1>
+        <img src=" https://images.pexels.com/photos/207301/pexels-photo-207301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    </div>
+      <div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 " id="bodyst">
+          <div class="ovim"></div>
+            <div class="overlay"></div>
+           <div class="in ek">
+               <div class="hov"><p>ORANGE JUICE</p></div>
+               <div class="order">
+                    <i class="fas fa-share"></i>
+                    <i class="fas fa-cart-arrow-down" ></i>
+                    <i class="fas fa-caret-up" ></i>
+               </div>
+           </div>
+           <div class="in do">
+                <div class="hov"><p>PINEAPPLE JUICE</p></div>
+                <div class="order">
+                        <i class="fas fa-share"></i>
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <i class="fas fa-caret-up" ></i>
+                </div>
+           </div>
+           <div class="in th">
+                <div class="hov"><p>POMEGRANATE JUICE</p></div>
+                <div class="order">
+                        <i class="fas fa-share"></i>
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <i class="fas fa-caret-up"></i>
+                </div>
+           </div>
+           <div class="in ch">
+                <div class="hov"><p>SUGARCANE JUICE</p></div>
+                <div class="order">
+                        <i class="fas fa-share"></i>
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <i class="fas fa-caret-up"></i>
+                </div>
+           </div>
+           <div class="in pa">
+                <div class="hov"><p>GRAPE JUICE</p></div>
+                <div class="order">
+                        <i class="fas fa-share"></i>
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <i class="fas fa-caret-up"></i>
+                </div>
+           </div>
+           <div class="in che">
+                <div class="hov"><p>PINEAPPLE JUICE</p></div>
+                <div class="order">
+                        <i class="fas fa-share"></i>
+                        <i class="fas fa-cart-arrow-down"></i>
+                        <i class="fas fa-caret-up"></i>
+                </div>
+           </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    
+</body>
+</html>
